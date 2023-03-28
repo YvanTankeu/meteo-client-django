@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Données Météo{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Données météo</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Date et heure</th>
+            <th scope="col">Température</th>
+            <th scope="col">Humidité</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for donnee in donnees %}
+        <tr>
+            <th scope="row">{{ donnee.id }}</th>
+            <td>{{ donnee.datetime }}</td>
+            <td>{{ donnee.temperature }}</td>
+            <td>{{ donnee.humidite }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

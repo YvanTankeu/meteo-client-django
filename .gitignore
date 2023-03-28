@@ -1,0 +1,29 @@
+# Fichiers Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Environnement virtuel
+env/
+
+# Fichiers de configuration
+*.env
+*.log
+*.conf
+
+# Fichiers de médias
+media/
+
+# Fichiers de sauvegarde
+backup/
+
+# Fichiers générés
+*.db
+*.sqlite3
+*.pyc
+*.pyo
+*.swp
+
+# Dossiers statiques
+staticfiles/
+assets/
